@@ -27,3 +27,7 @@ agrovoc.h:
 
 soapSKOSWSSoapBindingProxy.h: agrovoc.h
 	soapcpp2 -i -C agrovoc.h
+
+clean:
+	rm -f *.o *~ $(OBJS) agrovoc.h soapC.cpp soapH.h soapSKOSWSSoapBindingProxy.* soapStub.h SKOSWSSoapBinding*.xml *.nsmap
+
